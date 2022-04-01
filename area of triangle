@@ -1,0 +1,14 @@
+/*printing the area of triangle*/
+
+#include<stdio.h>
+#include<math.h>
+int main(){
+            float l,b,h,s;
+            float area;
+           printf("ENTER LENGTH BRIDTH HIGHT");
+           scanf("%f%f%f",&l,&b,&h);
+           s=l+b+h/2;
+           area=sqrt(s*(s-l)*(s-b)*(s-h));
+           printf("AREA OF TRIANGLE=%f\n",area);
+           return 0;
+}
